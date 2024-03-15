@@ -13,8 +13,11 @@
     --clr-yellow: #FFD600;
     --clr-black: #000000;
     --clr-bisque: #F7F2E4;
+    --clr-green: #00A106;
 }
-
+.color-green{
+    color: var(--clr-green);
+}
 .color-bisque {
     color: var(--clr-bisque);
 }
