@@ -305,7 +305,7 @@
 }
 
 .gap-116 {
-    gap: 116px;
+    gap: 40px;
 }
 
 @media (max-width:576px) {
@@ -377,6 +377,8 @@
         gap: 40px;
     }
 
+
+
     .border_right_left {
         border-left: 2px solid var(--clr-black);
         border-right: 2px solid var(--clr-black);
@@ -410,6 +412,10 @@
 
     .gap_178 {
         gap: 70px;
+    }
+
+    .gap-116 {
+        gap: 80px;
     }
 
     .tweets_box {
@@ -448,6 +454,10 @@
 
     .gap_178 {
         gap: 178px;
+    }
+
+    .gap-116 {
+        gap: 116px;
     }
 
     .max-w-475 {
