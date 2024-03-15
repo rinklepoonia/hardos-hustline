@@ -4,19 +4,21 @@
     --fs-sm: 18px;
     --fs-md: 24px;
     --fs-lg: 36px;
-    --fs-xl: 72px;
-    --fs-2xl: 80px;
-    --fs-3xl: 157px;
+    --fs-xl: 25px;
+    --fs-2xl: 40px;
+    --fs-3xl: 30px;
     /* ======color===== */
     --clr-white: #ffffff;
     --clr-red: #FF0000;
     --clr-yellow: #FFD600;
     --clr-black: #000000;
-    --clr-bisque:#F7F2E4;
+    --clr-bisque: #F7F2E4;
 }
-.color-bisque{
+
+.color-bisque {
     color: var(--clr-bisque);
 }
+
 .color-black {
     color: var(--clr-black);
 }
@@ -63,4 +65,39 @@
 
 .text157-3xl {
     font-size: var(--fs-3xl);
+}
+
+@media (min-width:576px) {
+    :root {
+        --fs-3xl: 80px;
+        --fs-xl: 40px;
+        --fs-2xl: 60px;
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        --fs-3xl: 100px;
+
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs-s: 14px;
+        --fs-ss: 16px;
+        --fs-sm: 18px;
+        --fs-md: 24px;
+        --fs-lg: 36px;
+        --fs-xl: 65px;
+        --fs-2xl: 80px;
+        /* --fs-3xl: 100px; */
+    }
+}
+
+@media (min-width:1200px) {
+    :root {
+        --fs-xl: 72px;
+        --fs-3xl: 157px;
+    }
 }
