@@ -311,7 +311,7 @@
 /* ================timeline============== */
 .py_90 {
     padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .container {
@@ -391,6 +391,66 @@
 .right::after {
     left: -69px;
 }
+
+/* =================FAQ============== */
+.max-w-992 {
+    max-width: 992px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--clr-black);
+    background: transparent;
+    box-shadow: none;
+}
+
+
+.accordion-item {
+    padding: 17px 17px !important;
+}
+
+.accordion-button {
+    padding: 0;
+}
+
+.accordion-body {
+    padding: 16px 0 0 0;
+}
+
+.accordion {
+    border-radius: 0;
+    --bs-accordion-bg: none;
+    --bs-accordion-border-color: transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion_border_left {
+    border-left: 2px solid var(--clr-black);
+}
+
+.accordion_border_right {
+    border-right: 2px solid var(--clr-black);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/svg/-ve\ arrow.svg);
+    height: 5px;
+    width: 13px;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url(../images/svg/+ve-arrow.svg);
+}
+
+.py_32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 
 @media screen and (max-width: 600px) {
 
@@ -526,6 +586,10 @@
 
     .tweets_box {
         padding: 48px 27px;
+    }
+
+    .accordion-item {
+        padding: 33px 24px !important;
     }
 
 
