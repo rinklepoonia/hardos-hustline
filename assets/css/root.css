@@ -14,6 +14,16 @@
     --clr-black: #000000;
     --clr-bisque: #F7F2E4;
     --clr-green: #00A106;
+    --clr-brown: #70675F;
+    --clr-cream: #D1C9C2;
+   
+}
+.color-cream{
+    color: var(--clr-cream);
+}
+
+.color-brown {
+    color: var(--clr-brown);
 }
 
 .color-green {

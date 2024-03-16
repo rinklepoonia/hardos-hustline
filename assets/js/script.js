@@ -48,3 +48,41 @@ $('.responsive').slick({
         },
     ]
 });
+$('.team-slider').slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    cssEasy: 'linear',
+    speed: 300,
+    prevArrow: ".prev2",
+    nextArrow: ".next2",
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: false,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+            }
+        },
+    ]
+});
