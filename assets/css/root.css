@@ -3,7 +3,7 @@
     --fs-ss: 16px;
     --fs-sm: 18px;
     --fs-md: 24px;
-    --fs-lg: 36px;
+    --fs-lg: 25px;
     --fs-xl: 25px;
     --fs-2xl: 40px;
     --fs-3xl: 30px;
@@ -15,9 +15,11 @@
     --clr-bisque: #F7F2E4;
     --clr-green: #00A106;
 }
-.color-green{
+
+.color-green {
     color: var(--clr-green);
 }
+
 .color-bisque {
     color: var(--clr-bisque);
 }
@@ -81,7 +83,7 @@
 @media (min-width:768px) {
     :root {
         --fs-3xl: 100px;
-
+        --fs-lg: 30px;
     }
 }
 
