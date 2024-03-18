@@ -6,6 +6,10 @@ menuIcon.addEventListener("click", function () {
     menuIcon.classList.toggle("show");
     document.querySelector(".menuIcon").classList.toggle("cross")
 })
+const Preload = document.getElementById("preload")
+setTimeout(() => {
+    Preload.classList.add("d-none")
+}, "4000");
 
 $('.responsive').slick({
     dots: false,
