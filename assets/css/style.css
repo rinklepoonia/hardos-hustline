@@ -109,6 +109,14 @@
 }
 
 /* ==============nav============ */
+.container_1140 {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -610,7 +618,6 @@
     }
 
     .tweets_box {
-        /* max-width: 391px; */
         padding: 20px 27px;
     }
 
@@ -624,6 +631,14 @@
 
     .tweet_left_border {
         border-left: 1px solid var(--clr-black);
+    }
+
+    .border_right {
+        border-right: 2px solid var(--clr-black);
+    }
+
+    .border_left {
+        border-left: 2px solid var(--clr-black);
     }
 }
 
@@ -764,6 +779,6 @@
     }
 
     .arrow {
-        left: 45.5%;
+        left: 502px;
     }
 }
