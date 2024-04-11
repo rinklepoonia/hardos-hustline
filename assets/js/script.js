@@ -162,44 +162,34 @@ $('.team-slider').slick({
 
 
 
-// Calling showTime function at every second
-setInterval(showTime, 1000);
+function countdown(endDate) {
+    //  current date and time
+    const now = new Date().getTime();
 
-// Defining showTime funcion
-function showTime() {
-    // Getting current time and date
-    let time = new Date();
-    let hour = time.getHours();
-    let min = time.getMinutes();
-    let sec = time.getSeconds();
-    am_pm = "AM";
+    //difference between the end date and the current date
+    const difference = endDate - now;
 
-    // Setting time for 12 Hrs format
-    if (hour >= 12) {
-        if (hour > 12) hour -= 12;
-        am_pm = "PM";
-    } else if (hour == 0) {
-        hr = 12;
-        am_pm = "AM";
-    }
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    // const milliseconds = difference % 1000;
 
-    hour =
-        hour < 10 ? "0" + hour : hour;
-    min = min < 10 ? "0" + min : min;
-    sec = sec < 10 ? "0" + sec : sec;
+    return {
+        days,
+        hours,
+        minutes,
+        seconds,
 
-    let currentTime =
-        hour +
-        ":" +
-        min +
-        ":" +
-        sec +
-        am_pm;
-
-    // Displaying the time
-    document.getElementById(
-        "clock"
-    ).innerHTML = currentTime;
+    };
 }
 
-showTime();
+const endDate = new Date("2024-05-01").getTime();
+setInterval(function () {
+    const remainingTime = countdown(endDate);
+    document.querySelector(
+        ".left"
+    ).innerHTML = `${remainingTime.days}: ${remainingTime.hours}: ${remainingTime.minutes}: ${remainingTime.seconds}`;
+}, 1000);
